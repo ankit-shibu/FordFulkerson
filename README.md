@@ -1,6 +1,12 @@
 # Ford-Fulkerson Algorithm
 In this assignment, we have implemented the Ford-Fulkerson algorithm to find the maximum flow and minimum cut.
 
+## General Discussion
+- Input Graph requriements:
+	* 1 source (Vertex with no incoming edge) 
+	* 1 sink (Vertex with no outgoing edge)
+- Time Complexity of the algorithm is O(C*m) where C is the sum of capacities out of source and m is the number of edges.
+ 
 
 ## TASK 1 + TASK 4 - Ford Fulkerson Algorithm
 ```
@@ -51,13 +57,17 @@ Dataset       |   Time(ms)  | Number of vertices(n) | Number of edges(m) |Maximu
  5 (10.txt)   |   20018     |   20454               |   30000            |   4069            |   0.9 e-4
  6 (5.txt)    |   171694    |   55467               |   58595            |   12652           |   1.1 e-4
 
-## System Specification
-
-## System Specification
+## Timing Analysis
+- We know that the complexity of the Ford Fulkerson algorithm to find the max-flow is O(C*m) where C is the sum of capacities out of source and m is the number of edges. From both the result tables from Task 3 and Task 1 we observe that the Time/(C*m) is approximatley a constant. This is in accordance with our knowledge that the complexity of the algorithm is of the order of C*m. 
 
 ## Issues 
 - Constructing of adjacency matrices proved to be very expensive(memory constraints) for larger graphs
 Fix:
 Using adjacency list to represent the graph as it takes up O(n+m) space as against O(n^2) used for adjacency matrices
+
+## System Specification
+
+
+
 
 
