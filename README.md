@@ -12,14 +12,14 @@ In this assignment, we have implemented the Ford-Fulkerson algorithm to find the
 - Results in test folder. Check test/input for the input files and test/output for corresponding output file
 ### Results for large datasets
 
-Dataset       |   Time(ms)  |   Number of vertices  |   Number of edges
---------------|-------------|-----------------------|-----------------------
- 1 (6b.txt)   |   167       |   2211                |   3685
- 2 (7b.txt)   |   12        |   914                 |   1912
- 3 (8b.txt)   |   1696      |   8077                |   18075
- 4 (9b.txt)   |   7189      |   14460               |   34458
- 5 (10b.txt)  |   20451     |   20456               |   50454
- 6 (5b.txt)   |   208615    |   55469               |   114062
+Dataset       |   Time(ms)  |   Number of vertices  |   Number of edges |   Max Flow
+--------------|-------------|-----------------------|-------------------|--------------------
+ 1 (6b.txt)   |   167       |   2211                |   3685            |   451
+ 2 (7b.txt)   |   12        |   914                 |   1912            |   63
+ 3 (8b.txt)   |   1696      |   8077                |   18075           |   959
+ 4 (9b.txt)   |   7189      |   14460               |   34458           |   2202
+ 5 (10b.txt)  |   20451     |   20456               |   50454           |   4069
+ 6 (5b.txt)   |   208615    |   55469               |   114062          |   12652
 
 ## TASK 2 - Min Cut
 ```
@@ -42,14 +42,16 @@ Dataset       |   Time(ms)  |   Number of vertices  |   Number of edges
 - Results in test folder. Check test/input for the input files and test/output for corresponding output file
 ### Results for large datasets
 
-Dataset       |   Time(ms)  |   Number of vertices  |   Number of edges
---------------|-------------|-----------------------|-----------------------
- 1 (6.txt)    |   187       |   2209                |   1476
- 2 (7.txt)    |   14        |   912                 |   1000
- 3 (8.txt)    |   1663      |   8075                |   10000
- 4 (9.txt)    |   7183      |   14458               |   20000
- 5 (10.txt)   |   20018     |   20454               |   30000
- 6 (5.txt)    |   171694    |   55467               |   58595
+Dataset       |   Time(ms)  |   Number of vertices  |   Number of edges  | Maximum Matching
+--------------|-------------|-----------------------|--------------------|-------------------
+ 1 (6.txt)    |   187       |   2209                |   1476             |   451
+ 2 (7.txt)    |   14        |   912                 |   1000             |   63
+ 3 (8.txt)    |   1663      |   8075                |   10000            |   959	
+ 4 (9.txt)    |   7183      |   14458               |   20000            |   2202
+ 5 (10.txt)   |   20018     |   20454               |   30000            |   4069
+ 6 (5.txt)    |   171694    |   55467               |   58595            |   12652
+
+## System Specification
 
 ## System Specification
 
