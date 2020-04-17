@@ -21,7 +21,16 @@ Dataset       |   Time(ms)  |   Number of vertices  |   Number of edges
  5 (10b.txt)  |   20451     |   20456               |   50454
  6 (5b.txt)   |   208615    |   55469               |   114062
 
-## TASK 2 + TASK 4 - Bi-Partite matching
+## TASK 2 - Min Cut
+```
+- g++ main.cpp graph.cpp -o main.out to compile code for small test cases
+	* Format: First line n m (implying number of vertices and edges respectively). Next m lines a b c (implying directed edge from a to b with weight c.)
+- g++ main2.cpp graph.cpp -o main.out to compile code for larger test cases. Need to specify the input file in the code
+
+```
+- Results in test folder. Check test/input for the input files and test/output for corresponding output file
+
+## TASK 3 + TASK 4 - Bi-Partite matching
 ```
 - g++ main.cpp graph.cpp -o main.out to compile code for small test cases
 	* Format: First line n m (implying number of vertices and edges respectively). 
@@ -42,10 +51,11 @@ Dataset       |   Time(ms)  |   Number of vertices  |   Number of edges
  5 (10.txt)   |   20018     |   20454               |   30000
  6 (5.txt)    |   171694    |   55467               |   58595
 
+## System Specification
+
 ## Issues 
-- Both algorithms were not running for large graphs even in the server system
+- Constructing of adjacency matrices proved to be very expensive(memory constraints) for larger graphs
 Fix:
-The fix was to increase stack space allocated to the C++ program.
-By default the OS allocates around 8MB space. However, for very large graphs the stack space used is high because of the dfs call
+Using adjacency list to represent the graph as it takes up O(n+m) space as against O(n^2) used for adjacency matrices
 
 
