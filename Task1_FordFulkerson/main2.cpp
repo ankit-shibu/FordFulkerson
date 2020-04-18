@@ -20,6 +20,7 @@ int main()
 		return 0;
 	}
 
+	// Initialize Graph instance
     Graph g(n,m,n-1,n);
 
 	for(i=1;i<=m;i++)

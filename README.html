@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/home/raghu/Documents/others/style.css" />
+</head>
+<body>
+<h1>
+<a id="user-content-strongly-connected-components" class="anchor" href="#strongly-connected-components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Strongly Connected Components</h1>
+<p>Two different implementations of Strongly Connected Components (SCC)</p>
+<h2>
+<a id="user-content-kosaraju" class="anchor" href="#kosaraju" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Kosaraju</h2>
+<h3>
+<a id="user-content-results-for-4-datasets" class="anchor" href="#results-for-4-datasets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Results for 4 datasets</h3>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Time(s)</th>
+<th>Number of vertices</th>
+<th>Number of edges</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>google plus</td>
+<td>160</td>
+<td>107614</td>
+<td>30494866</td>
+</tr>
+<tr>
+<td>twitter</td>
+<td>8</td>
+<td>81306</td>
+<td>2420766</td>
+</tr>
+<tr>
+<td>slashdot</td>
+<td>1</td>
+<td>82168</td>
+<td>948464</td>
+</tr>
+<tr>
+<td>pokec</td>
+<td>163</td>
+<td>1632803</td>
+<td>30622564</td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a id="user-content-divide-and-conquer-strong-components-dcsc" class="anchor" href="#divide-and-conquer-strong-components-dcsc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Divide and Conquer Strong Components (DCSC)</h2>
+<h3>
+<a id="user-content-resutls-for-4-datasets" class="anchor" href="#resutls-for-4-datasets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resutls for 4 datasets</h3>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Time(s)</th>
+<th>Number of vertices</th>
+<th>Number of edges</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>google plus</td>
+<td>228</td>
+<td>107614</td>
+<td>30494866</td>
+</tr>
+<tr>
+<td>twitter</td>
+<td>18</td>
+<td>81306</td>
+<td>2420766</td>
+</tr>
+<tr>
+<td>slashdot</td>
+<td>9</td>
+<td>82168</td>
+<td>948464</td>
+</tr>
+<tr>
+<td>pokec</td>
+<td>4068</td>
+<td>1632803</td>
+<td>30622564</td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a id="user-content-issues" class="anchor" href="#issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Issues</h2>
+<ul>
+<li>Both algorithms were not running for large graphs even in the server system
+Fix:
+The fix was to increase stack space allocated to the C++ program.
+By default the OS allocates around 8MB space. However, for very large graphs the stack space used is high because of the dfs call</li>
+</ul>
+<h2>
+<a id="user-content-scc-visualisation" class="anchor" href="#scc-visualisation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SCC Visualisation</h2>
+<p><a href="./plots/scc.png?raw=true" target="_blank" rel="noopener noreferrer"><img src="./plots/scc.png?raw=true" alt="Figure-1" style="max-width:100%;"></a></p>
+<p><a href="./plots/wiki-Vote.png?raw=true" target="_blank" rel="noopener noreferrer"><img src="./plots/wiki-Vote.png?raw=true" alt="Figure-2" style="max-width:100%;"></a></p>
+</body>
+</html>
+
