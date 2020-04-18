@@ -20,5 +20,6 @@ int main()
 		cin>>a>>b>>c;
         g.addEdge(a,b,c);
 	}
+	// Call the fordFulkerson function to perform Ford Fulkersons
     g.fordFulkerson(); 
 }

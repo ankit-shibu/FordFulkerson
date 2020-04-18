@@ -19,8 +19,8 @@ int main()
 		cout<<"Set A: "<<1<<"\n";
 		return 0;
 	}
-
-    Graph g(n,m,953,954);
+	// Initialize Graph instance
+    Graph g(n,m,n-1,n);
 
 	for(i=1;i<=m;i++)
 	{
