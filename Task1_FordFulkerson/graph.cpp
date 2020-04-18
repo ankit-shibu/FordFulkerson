@@ -62,7 +62,7 @@ int Graph::fordFulkerson()
             } 
             path_flow = min(path_flow, cap); 
         } 
-        cout<<s<<"\n";
+        cout<<s<<"  "<<"\n";
         for (v=t; v != s; v=parent[v]) 
         { 
             u = parent[v]; 

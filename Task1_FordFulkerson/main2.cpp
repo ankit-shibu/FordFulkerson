@@ -6,8 +6,8 @@ using namespace std::chrono;
 int main()
 {
 	#ifndef ONLINE_JUDGE
-	freopen("test/input/10b.txt","r",stdin);
-	freopen("test/output/10b.txt","w",stdout);
+	freopen("test/input/11.txt","r",stdin);
+	freopen("test/output/11.txt","w",stdout);
 	#endif
 
 	int n,m,i,j;
@@ -20,7 +20,7 @@ int main()
 		return 0;
 	}
 
-    Graph g(n,m,n-1,n);
+    Graph g(n,m,953,954);
 
 	for(i=1;i<=m;i++)
 	{
