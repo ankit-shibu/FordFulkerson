@@ -6,8 +6,8 @@ int main()
 {
 	int n,m,i,j,x,y;
 	#ifndef ONLINE_JUDGE
-	freopen("test/input/5.txt","r",stdin);
-	freopen("test/output/5.txt","w",stdout);
+	freopen("test/input/5b.txt","r",stdin);
+	freopen("test/output/5b.txt","w",stdout);
 	#endif
 	cin>>n>>x>>y>>m;
 	int type[n+1];
@@ -25,7 +25,7 @@ int main()
 	{
 		int a,b;
 		cin>>a>>b;
-		b+=x;
+		//b+=x;
 		if(!type[a])
         	g.addEdge(a,b,1);
         else

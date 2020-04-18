@@ -6,15 +6,14 @@ int main()
 	int n,m,i,j,x,y;
 	#ifndef ONLINE_JUDGE
 	freopen("5.txt","r",stdin);
-	freopen("11.txt","w",stdout);
+	freopen("5b.txt","w",stdout);
 	#endif
 	cin>>n>>x>>y>>m;
-	m = 40000;
 	vector<int>a,b;
 	for(i=1;i<=m;i++)
 	{
-		int x,y;
-		cin>>x>>y;
+		int p,q;
+		cin>>p>>q;
 		a.push_back(x);
 		b.push_back(y);
 	}
