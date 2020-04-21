@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ford-Fulkerson_DAA_Assignment2: Task1_FordFulkerson/graph.hpp Source File</title>
+<title>DAA Assignment 2: Task1_FordFulkerson/graph.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ford-Fulkerson_DAA_Assignment2
+   <div id="projectname">DAA Assignment 2
    </div>
-   <div id="projectbrief">Using Ford_Fulkerson Algorithm to find the max flow and min cut</div>
   </td>
  </tr>
  </tbody>
@@ -92,31 +91,43 @@ $(document).ready(function(){initNavTree('_task1___ford_fulkerson_2graph_8hpp_so
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_graph.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graph.html">Graph</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{   </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">int</span> n, m, s, t; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> i, j, u, v, cap;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    vector&lt;pair&lt;int,int&gt;&gt; *graph;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_graph.html#a81a76a428e630453ef019a15b9092967">    8</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_graph.html#a81a76a428e630453ef019a15b9092967">n</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_graph.html#a62588670cd666f806eddd37155bdfbf3">   10</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_graph.html#a62588670cd666f806eddd37155bdfbf3">m</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_graph.html#a8fc3005d8f0a659a706ba620729cf27b">   12</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_graph.html#a8fc3005d8f0a659a706ba620729cf27b">s</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_graph.html#a76df110212793f61ab2adb536c399a83">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_graph.html#a76df110212793f61ab2adb536c399a83">t</a>; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> findPath(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    vector&lt;bool&gt; visited;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    queue&lt;int&gt; q;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    vector&lt;int&gt; parent;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_graph.html">Graph</a>(<span class="keywordtype">int</span> n, <span class="keywordtype">int</span> m,<span class="keywordtype">int</span> s, <span class="keywordtype">int</span> t);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> addEdge(<span class="keywordtype">int</span> u, <span class="keywordtype">int</span> v, <span class="keywordtype">int</span> cap);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> fordFulkerson();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_graph.html#a23324531ae99747b494ef163d9339da7">   16</a></span>&#160;    <span class="keywordtype">int</span> i, j, u, <a class="code" href="class_graph.html#a23324531ae99747b494ef163d9339da7">v</a>, cap;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_graph.html#ae9b753a247599d0c04a5d6f75ce85fe4">   19</a></span>&#160;    vector&lt;pair&lt;int,int&gt;&gt; *<a class="code" href="class_graph.html#ae9b753a247599d0c04a5d6f75ce85fe4">graph</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> findPath(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_graph.html#aa95450e1dedd798d0bdbb4012d938227">   28</a></span>&#160;    vector&lt;bool&gt; <a class="code" href="class_graph.html#aa95450e1dedd798d0bdbb4012d938227">visited</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_graph.html#ae8a39cb910887ef96a86494d0bf3b75d">   31</a></span>&#160;    queue&lt;int&gt; <a class="code" href="class_graph.html#ae8a39cb910887ef96a86494d0bf3b75d">q</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_graph.html#a6fc15be4c2a7a57d8f60fa7028b097c9">   34</a></span>&#160;    vector&lt;int&gt; <a class="code" href="class_graph.html#a6fc15be4c2a7a57d8f60fa7028b097c9">parent</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_graph.html">Graph</a>(<span class="keywordtype">int</span> n, <span class="keywordtype">int</span> m,<span class="keywordtype">int</span> s, <span class="keywordtype">int</span> t);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> addEdge(<span class="keywordtype">int</span> u, <span class="keywordtype">int</span> v, <span class="keywordtype">int</span> cap);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> fordFulkerson();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_graph_html_ae8a39cb910887ef96a86494d0bf3b75d"><div class="ttname"><a href="class_graph.html#ae8a39cb910887ef96a86494d0bf3b75d">Graph::q</a></div><div class="ttdeci">queue&lt; int &gt; q</div><div class="ttdoc">Queue to be used for BFS.</div><div class="ttdef"><b>Definition:</b> graph.hpp:31</div></div>
+<div class="ttc" id="aclass_graph_html_aa95450e1dedd798d0bdbb4012d938227"><div class="ttname"><a href="class_graph.html#aa95450e1dedd798d0bdbb4012d938227">Graph::visited</a></div><div class="ttdeci">vector&lt; bool &gt; visited</div><div class="ttdoc">Visited array for dfs.</div><div class="ttdef"><b>Definition:</b> graph.hpp:28</div></div>
+<div class="ttc" id="aclass_graph_html_a62588670cd666f806eddd37155bdfbf3"><div class="ttname"><a href="class_graph.html#a62588670cd666f806eddd37155bdfbf3">Graph::m</a></div><div class="ttdeci">int m</div><div class="ttdoc">m: Number of edges</div><div class="ttdef"><b>Definition:</b> graph.hpp:10</div></div>
 <div class="ttc" id="aclass_graph_html"><div class="ttname"><a href="class_graph.html">Graph</a></div><div class="ttdef"><b>Definition:</b> graph.hpp:6</div></div>
+<div class="ttc" id="aclass_graph_html_a8fc3005d8f0a659a706ba620729cf27b"><div class="ttname"><a href="class_graph.html#a8fc3005d8f0a659a706ba620729cf27b">Graph::s</a></div><div class="ttdeci">int s</div><div class="ttdoc">s: Source vertex</div><div class="ttdef"><b>Definition:</b> graph.hpp:12</div></div>
+<div class="ttc" id="aclass_graph_html_a6fc15be4c2a7a57d8f60fa7028b097c9"><div class="ttname"><a href="class_graph.html#a6fc15be4c2a7a57d8f60fa7028b097c9">Graph::parent</a></div><div class="ttdeci">vector&lt; int &gt; parent</div><div class="ttdoc">Parent of each node after every BFS.</div><div class="ttdef"><b>Definition:</b> graph.hpp:34</div></div>
+<div class="ttc" id="aclass_graph_html_a81a76a428e630453ef019a15b9092967"><div class="ttname"><a href="class_graph.html#a81a76a428e630453ef019a15b9092967">Graph::n</a></div><div class="ttdeci">int n</div><div class="ttdoc">n: Number of vertices</div><div class="ttdef"><b>Definition:</b> graph.hpp:8</div></div>
+<div class="ttc" id="aclass_graph_html_ae9b753a247599d0c04a5d6f75ce85fe4"><div class="ttname"><a href="class_graph.html#ae9b753a247599d0c04a5d6f75ce85fe4">Graph::graph</a></div><div class="ttdeci">vector&lt; pair&lt; int, int &gt; &gt; * graph</div><div class="ttdoc">graph: graph (Adjacency List), gmat: graph (Matrix Representation)</div><div class="ttdef"><b>Definition:</b> graph.hpp:19</div></div>
+<div class="ttc" id="aclass_graph_html_a23324531ae99747b494ef163d9339da7"><div class="ttname"><a href="class_graph.html#a23324531ae99747b494ef163d9339da7">Graph::v</a></div><div class="ttdeci">int v</div><div class="ttdef"><b>Definition:</b> graph.hpp:16</div></div>
+<div class="ttc" id="aclass_graph_html_a76df110212793f61ab2adb536c399a83"><div class="ttname"><a href="class_graph.html#a76df110212793f61ab2adb536c399a83">Graph::t</a></div><div class="ttdeci">int t</div><div class="ttdoc">t: Sink vertex</div><div class="ttdef"><b>Definition:</b> graph.hpp:14</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

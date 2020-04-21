@@ -2,6 +2,11 @@
 #include "graph.hpp"
 using namespace std;
 using namespace std::chrono;
+
+/**
+* @brief Main function to execute the code
+* @return int 
+*/
 int main()
 {
 	int n,m,i,j,x,y;
@@ -20,7 +25,10 @@ int main()
 			type[i] = 1;
 	}
 
+	/// Initialze a instance of Graph
     Graph g(n+2,m+n,n+1,n+2);
+
+	/// Take Input
 	for(i=1;i<=m;i++)
 	{
 		int a,b;
@@ -32,6 +40,7 @@ int main()
         	g.addEdge(b,a,1);
 	}
 
+	/// Create a new source and sink vertex and add edges accordingly to create a newtork flow problem
 	for(i=1;i<=n;i++)
 	{
 		if(!type[i])
@@ -41,6 +50,7 @@ int main()
 	}
 	auto start = high_resolution_clock::now();
     int maxFlow = g.fordFulkerson(type); 
+	/// Use the created Graph instance to call the fordFulkerson function to find the Bipartite matching
     cout<<"Maximum Matching: "<<maxFlow;
     auto stop = high_resolution_clock::now(); 
     auto duration = duration_cast<microseconds>(stop - start); 

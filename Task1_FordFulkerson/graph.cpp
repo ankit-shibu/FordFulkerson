@@ -17,6 +17,11 @@ void Graph::addEdge(int u, int v,int cap)
     graph[u].push_back(make_pair(v,cap));
 }
 
+/**
+* @brief Find a Augmenting Path
+* @return bool 
+*/
+
 bool Graph::findPath()
 {   
     // Using BFS to find a Augmenting Path

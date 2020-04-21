@@ -7,24 +7,64 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_graph_ac6afe1fd674622a0df5496a122d3f4ad}{Graph}} (int n, int m, int s, int t)
+\mbox{\hyperlink{class_graph_ac6afe1fd674622a0df5496a122d3f4ad}{Graph}} (int \mbox{\hyperlink{class_graph_a81a76a428e630453ef019a15b9092967}{n}}, int \mbox{\hyperlink{class_graph_a62588670cd666f806eddd37155bdfbf3}{m}}, int \mbox{\hyperlink{class_graph_a8fc3005d8f0a659a706ba620729cf27b}{s}}, int \mbox{\hyperlink{class_graph_a76df110212793f61ab2adb536c399a83}{t}})
 \begin{DoxyCompactList}\small\item\em Constructor for initialising data structure. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_graph_a8cdfb932968807565b3cc3b52759e3b8}{add\+Edge}} (int u, int v, int cap)
+void \mbox{\hyperlink{class_graph_a8cdfb932968807565b3cc3b52759e3b8}{add\+Edge}} (int \mbox{\hyperlink{class_graph_a290e45f26a477f88442b6624aefa4a61}{u}}, int \mbox{\hyperlink{class_graph_a23324531ae99747b494ef163d9339da7}{v}}, int \mbox{\hyperlink{class_graph_aa7ea16dbf76b9f52cba972b38799738a}{cap}})
 \begin{DoxyCompactList}\small\item\em Add directed edge from u -\/$>$ v. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_graph_adf07ffa7541d6412a8606f59dacb8947}{ford\+Fulkerson}} ()
 \begin{DoxyCompactList}\small\item\em Applying the Ford\+Fulkerson Alogorithm. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_graph_ac6afe1fd674622a0df5496a122d3f4ad}{Graph}} (int n, int m, int s, int t)
+\mbox{\hyperlink{class_graph_ac6afe1fd674622a0df5496a122d3f4ad}{Graph}} (int \mbox{\hyperlink{class_graph_a81a76a428e630453ef019a15b9092967}{n}}, int \mbox{\hyperlink{class_graph_a62588670cd666f806eddd37155bdfbf3}{m}}, int \mbox{\hyperlink{class_graph_a8fc3005d8f0a659a706ba620729cf27b}{s}}, int \mbox{\hyperlink{class_graph_a76df110212793f61ab2adb536c399a83}{t}})
 \begin{DoxyCompactList}\small\item\em Constructor for initialising data structure. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_graph_a8cdfb932968807565b3cc3b52759e3b8}{add\+Edge}} (int u, int v, int cap)
+void \mbox{\hyperlink{class_graph_a8cdfb932968807565b3cc3b52759e3b8}{add\+Edge}} (int \mbox{\hyperlink{class_graph_a290e45f26a477f88442b6624aefa4a61}{u}}, int \mbox{\hyperlink{class_graph_a23324531ae99747b494ef163d9339da7}{v}}, int \mbox{\hyperlink{class_graph_aa7ea16dbf76b9f52cba972b38799738a}{cap}})
 \begin{DoxyCompactList}\small\item\em Add directed edge from u -\/$>$ v. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_graph_adf07ffa7541d6412a8606f59dacb8947}{ford\+Fulkerson}} ()
 \begin{DoxyCompactList}\small\item\em Applying the Ford\+Fulkerson Alogorithm. Calls the mincut. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_graph_ac6afe1fd674622a0df5496a122d3f4ad}{Graph}} (int n, int m, int s, int t)
+\mbox{\hyperlink{class_graph_ac6afe1fd674622a0df5496a122d3f4ad}{Graph}} (int \mbox{\hyperlink{class_graph_a81a76a428e630453ef019a15b9092967}{n}}, int \mbox{\hyperlink{class_graph_a62588670cd666f806eddd37155bdfbf3}{m}}, int \mbox{\hyperlink{class_graph_a8fc3005d8f0a659a706ba620729cf27b}{s}}, int \mbox{\hyperlink{class_graph_a76df110212793f61ab2adb536c399a83}{t}})
 \begin{DoxyCompactList}\small\item\em Constructor for initialising data structure. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_graph_a8cdfb932968807565b3cc3b52759e3b8}{add\+Edge}} (int u, int v, int cap)
+void \mbox{\hyperlink{class_graph_a8cdfb932968807565b3cc3b52759e3b8}{add\+Edge}} (int \mbox{\hyperlink{class_graph_a290e45f26a477f88442b6624aefa4a61}{u}}, int \mbox{\hyperlink{class_graph_a23324531ae99747b494ef163d9339da7}{v}}, int \mbox{\hyperlink{class_graph_aa7ea16dbf76b9f52cba972b38799738a}{cap}})
 \begin{DoxyCompactList}\small\item\em Add directed edge from u -\/$>$ v. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_graph_a138c00d593d0bb9f65c82836158a1ac4}{ford\+Fulkerson}} (int type\mbox{[}$\,$\mbox{]})
 \begin{DoxyCompactList}\small\item\em Applying the Ford\+Fulkerson Alogorithm. Calls the mincut. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_graph_a4aa52fe1468d6db862aa74ff007aac80}{find\+Path}} (void)
+\begin{DoxyCompactList}\small\item\em Find a Augmenting Path. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_graph_a4aa52fe1468d6db862aa74ff007aac80}{find\+Path}} (void)
+\begin{DoxyCompactList}\small\item\em Perform B\+FS to find a augmenting path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_ae285955f58e7983fbec85a3e16479e7f}{mincut}} (void)
+\begin{DoxyCompactList}\small\item\em Find the min-\/cut. The sets of vertices. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_graph_a4aa52fe1468d6db862aa74ff007aac80}{find\+Path}} (void)
+\begin{DoxyCompactList}\small\item\em Perform B\+FS to find a augmenting path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_graph_a81a76a428e630453ef019a15b9092967}{n}}
+\begin{DoxyCompactList}\small\item\em n\+: Number of vertices \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_a62588670cd666f806eddd37155bdfbf3}{m}}
+\begin{DoxyCompactList}\small\item\em m\+: Number of edges \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_a8fc3005d8f0a659a706ba620729cf27b}{s}}
+\begin{DoxyCompactList}\small\item\em s\+: Source vertex \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_a76df110212793f61ab2adb536c399a83}{t}}
+\begin{DoxyCompactList}\small\item\em t\+: Sink vertex \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_graph_aedf6596df6c808fd1b5c5da76daa4752}{i}}
+\item 
+int \mbox{\hyperlink{class_graph_ac52d82b17acd9b029d0138b9cbf05347}{j}}
+\item 
+int \mbox{\hyperlink{class_graph_a290e45f26a477f88442b6624aefa4a61}{u}}
+\item 
+int \mbox{\hyperlink{class_graph_a23324531ae99747b494ef163d9339da7}{v}}
+\item 
+int \mbox{\hyperlink{class_graph_aa7ea16dbf76b9f52cba972b38799738a}{cap}}
+\item 
+vector$<$ pair$<$ int, int $>$ $>$ $\ast$ \mbox{\hyperlink{class_graph_ae9b753a247599d0c04a5d6f75ce85fe4}{graph}}
+\begin{DoxyCompactList}\small\item\em graph\+: graph (Adjacency List), gmat\+: graph (Matrix Representation) \end{DoxyCompactList}\item 
+vector$<$ bool $>$ \mbox{\hyperlink{class_graph_aa95450e1dedd798d0bdbb4012d938227}{visited}}
+\begin{DoxyCompactList}\small\item\em Visited array for dfs. \end{DoxyCompactList}\item 
+queue$<$ int $>$ \mbox{\hyperlink{class_graph_ae8a39cb910887ef96a86494d0bf3b75d}{q}}
+\begin{DoxyCompactList}\small\item\em Queue to be used for B\+FS. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_graph_a6fc15be4c2a7a57d8f60fa7028b097c9}{parent}}
+\begin{DoxyCompactList}\small\item\em Parent of each node after every B\+FS. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -151,6 +191,47 @@ Add directed edge from u -\/$>$ v.
 {\em v} & To vertex \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_graph_a4aa52fe1468d6db862aa74ff007aac80}\label{class_graph_a4aa52fe1468d6db862aa74ff007aac80}} 
+\index{Graph@{Graph}!findPath@{findPath}}
+\index{findPath@{findPath}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{findPath()}{findPath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Graph\+::find\+Path (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find a Augmenting Path. 
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_a4aa52fe1468d6db862aa74ff007aac80}\label{class_graph_a4aa52fe1468d6db862aa74ff007aac80}} 
+\index{Graph@{Graph}!findPath@{findPath}}
+\index{findPath@{findPath}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{findPath()}{findPath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Graph\+::find\+Path (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Perform B\+FS to find a augmenting path. 
+
+\begin{DoxyReturn}{Returns}
+bool ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_a4aa52fe1468d6db862aa74ff007aac80}\label{class_graph_a4aa52fe1468d6db862aa74ff007aac80}} 
+\index{Graph@{Graph}!findPath@{findPath}}
+\index{findPath@{findPath}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{findPath()}{findPath()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Graph\+::find\+Path (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Perform B\+FS to find a augmenting path. 
+
+\begin{DoxyReturn}{Returns}
+bool ~\newline
+ 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_graph_adf07ffa7541d6412a8606f59dacb8947}\label{class_graph_adf07ffa7541d6412a8606f59dacb8947}} 
 \index{Graph@{Graph}!fordFulkerson@{fordFulkerson}}
 \index{fordFulkerson@{fordFulkerson}!Graph@{Graph}}
@@ -180,6 +261,129 @@ Applying the Ford\+Fulkerson Alogorithm. Calls the mincut.
 
 
 Applying the Ford\+Fulkerson Alogorithm. Calls the mincut. 
+
+\mbox{\Hypertarget{class_graph_ae285955f58e7983fbec85a3e16479e7f}\label{class_graph_ae285955f58e7983fbec85a3e16479e7f}} 
+\index{Graph@{Graph}!mincut@{mincut}}
+\index{mincut@{mincut}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{mincut()}{mincut()}}
+{\footnotesize\ttfamily void Graph\+::mincut (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find the min-\/cut. The sets of vertices. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graph_aa7ea16dbf76b9f52cba972b38799738a}\label{class_graph_aa7ea16dbf76b9f52cba972b38799738a}} 
+\index{Graph@{Graph}!cap@{cap}}
+\index{cap@{cap}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{cap}{cap}}
+{\footnotesize\ttfamily int Graph\+::cap\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_graph_ae9b753a247599d0c04a5d6f75ce85fe4}\label{class_graph_ae9b753a247599d0c04a5d6f75ce85fe4}} 
+\index{Graph@{Graph}!graph@{graph}}
+\index{graph@{graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily vector$<$ pair$<$ int, int $>$ $>$ $\ast$ Graph\+::graph\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+graph\+: graph (Adjacency List), gmat\+: graph (Matrix Representation) 
+
+\mbox{\Hypertarget{class_graph_aedf6596df6c808fd1b5c5da76daa4752}\label{class_graph_aedf6596df6c808fd1b5c5da76daa4752}} 
+\index{Graph@{Graph}!i@{i}}
+\index{i@{i}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int Graph\+::i\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_graph_ac52d82b17acd9b029d0138b9cbf05347}\label{class_graph_ac52d82b17acd9b029d0138b9cbf05347}} 
+\index{Graph@{Graph}!j@{j}}
+\index{j@{j}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily int Graph\+::j\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_graph_a62588670cd666f806eddd37155bdfbf3}\label{class_graph_a62588670cd666f806eddd37155bdfbf3}} 
+\index{Graph@{Graph}!m@{m}}
+\index{m@{m}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily int Graph\+::m\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+m\+: Number of edges 
+
+\mbox{\Hypertarget{class_graph_a81a76a428e630453ef019a15b9092967}\label{class_graph_a81a76a428e630453ef019a15b9092967}} 
+\index{Graph@{Graph}!n@{n}}
+\index{n@{n}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily int Graph\+::n\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+n\+: Number of vertices 
+
+\mbox{\Hypertarget{class_graph_a6fc15be4c2a7a57d8f60fa7028b097c9}\label{class_graph_a6fc15be4c2a7a57d8f60fa7028b097c9}} 
+\index{Graph@{Graph}!parent@{parent}}
+\index{parent@{parent}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily vector$<$ int $>$ Graph\+::parent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Parent of each node after every B\+FS. 
+
+\mbox{\Hypertarget{class_graph_ae8a39cb910887ef96a86494d0bf3b75d}\label{class_graph_ae8a39cb910887ef96a86494d0bf3b75d}} 
+\index{Graph@{Graph}!q@{q}}
+\index{q@{q}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{q}{q}}
+{\footnotesize\ttfamily queue$<$ int $>$ Graph\+::q\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Queue to be used for B\+FS. 
+
+\mbox{\Hypertarget{class_graph_a8fc3005d8f0a659a706ba620729cf27b}\label{class_graph_a8fc3005d8f0a659a706ba620729cf27b}} 
+\index{Graph@{Graph}!s@{s}}
+\index{s@{s}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily int Graph\+::s\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+s\+: Source vertex 
+
+\mbox{\Hypertarget{class_graph_a76df110212793f61ab2adb536c399a83}\label{class_graph_a76df110212793f61ab2adb536c399a83}} 
+\index{Graph@{Graph}!t@{t}}
+\index{t@{t}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily int Graph\+::t\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+t\+: Sink vertex 
+
+\mbox{\Hypertarget{class_graph_a290e45f26a477f88442b6624aefa4a61}\label{class_graph_a290e45f26a477f88442b6624aefa4a61}} 
+\index{Graph@{Graph}!u@{u}}
+\index{u@{u}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{u}{u}}
+{\footnotesize\ttfamily int Graph\+::u\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_graph_a23324531ae99747b494ef163d9339da7}\label{class_graph_a23324531ae99747b494ef163d9339da7}} 
+\index{Graph@{Graph}!v@{v}}
+\index{v@{v}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily int Graph\+::v\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_graph_aa95450e1dedd798d0bdbb4012d938227}\label{class_graph_aa95450e1dedd798d0bdbb4012d938227}} 
+\index{Graph@{Graph}!visited@{visited}}
+\index{visited@{visited}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{visited}{visited}}
+{\footnotesize\ttfamily vector$<$ bool $>$ Graph\+::visited\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Visited array for dfs. 
 
 
 

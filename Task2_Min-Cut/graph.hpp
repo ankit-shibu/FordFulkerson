@@ -4,10 +4,15 @@ using namespace std;
 
 class Graph
 {
-    /// n: Number of vertices, m: Number of edges
-    int n, m, s, t;
+    /// n: Number of vertices
+    int n;
+    /// m: Number of edges
+    int m;
+    /// s: Source vertex
+    int s;
+    /// t: Sink vertex
+    int t; 
     
-    /// Variables used in different functions
     int i, j, u, v, cap;
 
     /// graph: graph (Adjacency List), gmat: graph (Matrix Representation)
