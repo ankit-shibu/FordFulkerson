@@ -95,6 +95,7 @@ General Discussion</h1>
 </ul>
 </li>
 <li>Time Complexity of the algorithm is O(C*m) where C is the sum of capacities out of source and m is the number of edges.</li>
+<li>Flow condition -&gt; a) Flow into a node = Flow out of a node b) Total flow on an edge &lt;= Capacity of the edge</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
 TASK 1 + TASK 4 - Ford Fulkerson Algorithm</h1>
@@ -130,6 +131,18 @@ TASK 2 - Min Cut</h1>
 </div><!-- fragment --><ul>
 <li>Results in test folder. Check test/input for the input files and test/output for corresponding output file</li>
 </ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Dataset </th><th class="markdownTableHeadNone">Number of vertices(n) </th><th class="markdownTableHeadNone">Number of edges(m) </th><th class="markdownTableHeadNone">Min-Cut  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1 ( 1.txt) </td><td class="markdownTableBodyNone">6 </td><td class="markdownTableBodyNone">10 </td><td class="markdownTableBodyNone">23 Set A: 1 2 3 5 Set B: 4 6  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2 ( 2.txt) </td><td class="markdownTableBodyNone">2 </td><td class="markdownTableBodyNone">1 </td><td class="markdownTableBodyNone">5 Set A: 1 Set B: 2  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3 ( 3.txt) </td><td class="markdownTableBodyNone">6 </td><td class="markdownTableBodyNone">10 </td><td class="markdownTableBodyNone">11 Set A: 1 3 Set B: 2 4 5 6  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4 ( 4.txt) </td><td class="markdownTableBodyNone">7 </td><td class="markdownTableBodyNone">14 </td><td class="markdownTableBodyNone">20 Set A: 1 3 Set B: 2 4 5 6 7  </td></tr>
+</table>
 <h1><a class="anchor" id="autotoc_md5"></a>
 TASK 3 + TASK 4 - Bi-Partite matching</h1>
 <div class="fragment"><div class="line">- g++ main.cpp graph.cpp -o main.out to compile code for small test cases</div>
