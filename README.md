@@ -11,7 +11,8 @@ In this assignment, we have implemented the Ford-Fulkerson algorithm to find the
 ## TASK 1 + TASK 4 - Ford Fulkerson Algorithm
 ```
 - g++ main.cpp graph.cpp -o main.out to compile code for small test cases
-	* Format: First line n m (implying number of vertices and edges respectively). Next m lines a b c (implying directed edge from a to b with weight c.)
+	* Format: First line n m (implying number of vertices and edges respectively). 
+	* Next m lines a b c (implying directed edge from a to b with weight c.)
 - g++ main2.cpp graph.cpp -o main.out to compile code for larger test cases. Need to specify the input file in the code
 
 ```
@@ -30,7 +31,8 @@ Dataset       |   Time(ms)  | Number of vertices(n) | Number of edges(m)|  Max F
 ## TASK 2 - Min Cut
 ```
 - g++ main.cpp graph.cpp -o main.out to compile code for small test cases
-	* Format: First line n m (implying number of vertices and edges respectively). Next m lines a b c (implying directed edge from a to b with weight c.)
+	* Format: First line n m (implying number of vertices and edges respectively). 
+	* Next m lines a b c (implying directed edge from a to b with weight c.)
 - g++ main2.cpp graph.cpp -o main.out to compile code for larger test cases. Need to specify the input file in the code
 
 ```
