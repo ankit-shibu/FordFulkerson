@@ -69,12 +69,11 @@ Dataset       |   Time(ms)  | Number of vertices(n) | Number of edges(m) |Maximu
 
 ## Issues 
 - Constructing of adjacency matrices proved to be very expensive(memory constraints) for larger graphs
-Fix:
-Using adjacency list to represent the graph as it takes up O(n+m) space as against O(n^2) used for adjacency matrices
+- Fix: Using adjacency list to represent the graph as it takes up O(n+m) space as against O(n^2) used for adjacency matrices
 
 ## System Specification
-Processor - Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz, 2401 Mhz, 2 Core(s), 4 Logical Processor(s)
-Installed Physical Memory (RAM)	8.00 GB
+- Processor - Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz, 2401 Mhz, 2 Core(s), 4 Logical Processor(s)
+- Installed Physical Memory (RAM)	8.00 GB
 
 
 
