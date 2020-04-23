@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
+/**
+* @brief Converting input to the required input format for Task 3
+* @return int 
+*/
+
 int main()
 {
 	int n,m,i,j,x,y;
@@ -8,6 +12,7 @@ int main()
 	freopen("5.txt","r",stdin);
 	freopen("5b.txt","w",stdout);
 	#endif
+	
 	cin>>n>>x>>y>>m;
 	vector<int>a,b;
 	for(i=1;i<=m;i++)

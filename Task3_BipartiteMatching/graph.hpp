@@ -57,8 +57,8 @@ public:
     /**
      * @brief Applying the FordFulkerson Alogorithm. Calls the mincut
      * 
-     * 
-     *  
+     * @return int
+     * @param type An array such that type[i] = 1 if vertex i belongs to Set B and 0 if vertex i belongs to Set A and all edges directed from Set A to Set B 
      */
 	int fordFulkerson(int type[]);
 };

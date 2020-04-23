@@ -224,6 +224,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>Initialization</p>
 
 </div>
 </div>
@@ -488,6 +489,7 @@ Private Attributes</h2></td></tr>
 
 <p>Find a Augmenting Path. </p>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+<p>Using BFS to find a Augmenting Path</p>
 
 </div>
 </div>
@@ -567,6 +569,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Applying the FordFulkerson Alogorithm. </p>
+<p>Finding the Bottleneck for the chosen Augmenting Path</p>
+<p>Modifying the flow graph and the residual graph</p>
+<p>Incrementing the max flow by the bottleneck</p>
 
 </div>
 </div>
@@ -606,6 +611,18 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Applying the FordFulkerson Alogorithm. Calls the mincut. </p>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>An array such that type[i] = 1 if vertex i belongs to Set B and 0 if vertex i belongs to Set A and all edges directed from Set A to Set B </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Finding the Bottleneck for the chosen Augmenting Path <br  />
+</p>
+<p>Modifying the flow graph and the residual graph</p>
+<p>Increment the max flow by the bottleneck of the chosen augmenting path</p>
+<p>For each task find the person it is assigned to in the Maximum Matching</p>
 
 </div>
 </div>
@@ -634,6 +651,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Find the min-cut. The sets of vertices. </p>
+<p>Find all nodes reachable from the source vertex and label them as Set A and the rest as Set B</p>
+<p>Print the sets</p>
 
 </div>
 </div>

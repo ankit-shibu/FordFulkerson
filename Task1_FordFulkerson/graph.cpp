@@ -2,7 +2,7 @@
 
 Graph::Graph(int n, int m, int s,int t)
 {   
-    // Initialization
+    /// Initialization
     this->n = n;
     this->m = m;
     this->s = s;
@@ -24,7 +24,7 @@ void Graph::addEdge(int u, int v,int cap)
 
 bool Graph::findPath()
 {   
-    // Using BFS to find a Augmenting Path
+    /// Using BFS to find a Augmenting Path
     for(i=1;i<=n;i++)
         visited[i] = false;
     while(!q.empty())
@@ -57,7 +57,7 @@ int Graph::fordFulkerson()
     while (findPath()) 
     { 
         int path_flow = INT_MAX;
-        // Finding the Bottleneck for the chosen Augmenting Path 
+        /// Finding the Bottleneck for the chosen Augmenting Path 
         for (v=t; v!=s; v=parent[v]) 
         { 
             cout<<v<<"<-";
@@ -71,7 +71,7 @@ int Graph::fordFulkerson()
             path_flow = min(path_flow, cap); 
         } 
         cout<<s<<"\n";
-        // Modifying the flow graph and the residual graph
+        /// Modifying the flow graph and the residual graph
         for (v=t; v != s; v=parent[v]) 
         { 
             u = parent[v]; 
@@ -91,7 +91,8 @@ int Graph::fordFulkerson()
             } 
             if(flag)
                 graph[v].push_back(make_pair(u,path_flow));
-        } 
+        }
+        /// Incrementing the max flow by the bottleneck 
         max_flow += path_flow; 
     } 
     return max_flow; 

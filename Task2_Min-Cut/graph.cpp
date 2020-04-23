@@ -2,7 +2,7 @@
 
 Graph::Graph(int n, int m, int s, int t)
 {   
-    // Initialization
+    /// Initialization
     this->n = n;
     this->m = m;
     this->s = s;
@@ -19,7 +19,7 @@ void Graph::addEdge(int u, int v,int cap)
 
 bool Graph::findPath()
 {
-    // Using BFS to find a Augmenting Path    
+    /// Using BFS to find a Augmenting Path    
     for(i=1;i<=n;i++)
         visited[i] = false;
     while(!q.empty())
@@ -27,6 +27,7 @@ bool Graph::findPath()
     q.push(s); 
     visited[s] = true; 
     parent[s] = -1; 
+
     while (!q.empty()) 
     { 
         u = q.front(); 
@@ -48,10 +49,13 @@ bool Graph::findPath()
 
 void Graph::mincut()
 {
+    /// Find all nodes reachable from the source vertex and label them as Set A and the rest as Set B
     for(i=1;i<=n;i++)
         visited[i] = false;
+
     while(!q.empty())
         q.pop();
+
     q.push(s); 
     visited[s] = true; 
     parent[s] = -1; 
@@ -77,7 +81,7 @@ void Graph::mincut()
             a.push_back(i);
         else
             b.push_back(i);
-
+    /// Print the sets
     cout<<"Set A: ";
     for(int i=0; i<a.size();i++)
         cout<<a[i]<<" ";
@@ -92,7 +96,7 @@ void Graph::fordFulkerson()
     while (findPath()) 
     { 
         int path_flow = INT_MAX;
-        // Finding the Bottleneck for the chosen Augmenting Path 
+        /// Finding the Bottleneck for the chosen Augmenting Path 
         for (v=t; v!=s; v=parent[v]) 
         { 
             cout<<v<<"<-";
@@ -106,7 +110,7 @@ void Graph::fordFulkerson()
             path_flow = min(path_flow, cap); 
         } 
         cout<<s<<"\n";
-        // Modifying the flow graph and the residual graph
+        /// Modifying the flow graph and the residual graph
         for (v=t; v != s; v=parent[v]) 
         { 
             u = parent[v]; 
@@ -126,9 +130,11 @@ void Graph::fordFulkerson()
             } 
             if(flag)
                 graph[v].push_back(make_pair(u,path_flow));
-        } 
+        }
+        /// Increment the max flow by the bottleneck for each augmenting path 
         max_flow += path_flow; 
     }
     cout<<max_flow<<"\n";
+    /// Call the mincut function to print the Cut sets
     mincut(); 
 } 

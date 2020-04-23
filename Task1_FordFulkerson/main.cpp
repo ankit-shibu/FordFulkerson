@@ -13,7 +13,6 @@ int main()
 	if(n<=1)
 	{
 		cout<<0<<"\n";
-		cout<<"Set A: "<<1<<"\n";
 		return 0;
 	}
 	/// Initialize Graph instance

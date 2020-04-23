@@ -89,7 +89,7 @@ Constructor for initialising data structure.
 {\em t} & sink \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_graph_ac6afe1fd674622a0df5496a122d3f4ad}\label{class_graph_ac6afe1fd674622a0df5496a122d3f4ad}} 
+Initialization\mbox{\Hypertarget{class_graph_ac6afe1fd674622a0df5496a122d3f4ad}\label{class_graph_ac6afe1fd674622a0df5496a122d3f4ad}} 
 \index{Graph@{Graph}!Graph@{Graph}}
 \index{Graph@{Graph}!Graph@{Graph}}
 \doxysubsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
@@ -204,7 +204,7 @@ Find a Augmenting Path.
 \begin{DoxyReturn}{Returns}
 bool 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_graph_a4aa52fe1468d6db862aa74ff007aac80}\label{class_graph_a4aa52fe1468d6db862aa74ff007aac80}} 
+Using B\+FS to find a Augmenting Path\mbox{\Hypertarget{class_graph_a4aa52fe1468d6db862aa74ff007aac80}\label{class_graph_a4aa52fe1468d6db862aa74ff007aac80}} 
 \index{Graph@{Graph}!findPath@{findPath}}
 \index{findPath@{findPath}!Graph@{Graph}}
 \doxysubsubsection{\texorpdfstring{findPath()}{findPath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
@@ -242,7 +242,11 @@ bool ~\newline
 
 Applying the Ford\+Fulkerson Alogorithm. 
 
-\mbox{\Hypertarget{class_graph_adf07ffa7541d6412a8606f59dacb8947}\label{class_graph_adf07ffa7541d6412a8606f59dacb8947}} 
+Finding the Bottleneck for the chosen Augmenting Path
+
+Modifying the flow graph and the residual graph
+
+Incrementing the max flow by the bottleneck\mbox{\Hypertarget{class_graph_adf07ffa7541d6412a8606f59dacb8947}\label{class_graph_adf07ffa7541d6412a8606f59dacb8947}} 
 \index{Graph@{Graph}!fordFulkerson@{fordFulkerson}}
 \index{fordFulkerson@{fordFulkerson}!Graph@{Graph}}
 \doxysubsubsection{\texorpdfstring{fordFulkerson()}{fordFulkerson()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
@@ -262,7 +266,22 @@ Applying the Ford\+Fulkerson Alogorithm. Calls the mincut.
 
 Applying the Ford\+Fulkerson Alogorithm. Calls the mincut. 
 
-\mbox{\Hypertarget{class_graph_ae285955f58e7983fbec85a3e16479e7f}\label{class_graph_ae285955f58e7983fbec85a3e16479e7f}} 
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & An array such that type\mbox{[}i\mbox{]} = 1 if vertex i belongs to Set B and 0 if vertex i belongs to Set A and all edges directed from Set A to Set B \\
+\hline
+\end{DoxyParams}
+Finding the Bottleneck for the chosen Augmenting Path ~\newline
+
+
+Modifying the flow graph and the residual graph
+
+Increment the max flow by the bottleneck of the chosen augmenting path
+
+For each task find the person it is assigned to in the Maximum Matching\mbox{\Hypertarget{class_graph_ae285955f58e7983fbec85a3e16479e7f}\label{class_graph_ae285955f58e7983fbec85a3e16479e7f}} 
 \index{Graph@{Graph}!mincut@{mincut}}
 \index{mincut@{mincut}!Graph@{Graph}}
 \doxysubsubsection{\texorpdfstring{mincut()}{mincut()}}
@@ -272,7 +291,9 @@ Applying the Ford\+Fulkerson Alogorithm. Calls the mincut.
 
 Find the min-\/cut. The sets of vertices. 
 
+Find all nodes reachable from the source vertex and label them as Set A and the rest as Set B
 
+Print the sets
 
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{class_graph_aa7ea16dbf76b9f52cba972b38799738a}\label{class_graph_aa7ea16dbf76b9f52cba972b38799738a}} 

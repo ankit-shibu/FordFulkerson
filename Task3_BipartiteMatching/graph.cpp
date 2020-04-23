@@ -2,7 +2,7 @@
 
 Graph::Graph(int n, int m, int s, int t)
 {
-    // Initialization
+    /// Initialization
     this->n = n;
     this->m = m;
     this->s = s;
@@ -19,14 +19,17 @@ void Graph::addEdge(int u, int v,int cap)
 
 bool Graph::findPath()
 {
-    // Using BFS to find a Augmenting Path
+    /// Using BFS to find a Augmenting Path
     for(i=1;i<=n;i++)
         visited[i] = false;
+
     while(!q.empty())
         q.pop();
+
     q.push(s); 
     visited[s] = true; 
     parent[s] = -1; 
+
     while (!q.empty()) 
     { 
         u = q.front(); 
@@ -55,7 +58,7 @@ int Graph::fordFulkerson(int type[])
     while (findPath()) 
     { 
         int path_flow = INT_MAX;
-        // Finding the Bottleneck for the chosen Augmenting Path  
+        /// Finding the Bottleneck for the chosen Augmenting Path  
         for (v=t; v!=s; v=parent[v]) 
         { 
             if(v!=t)
@@ -72,7 +75,7 @@ int Graph::fordFulkerson(int type[])
             } 
             path_flow = min(path_flow, cap); 
         }
-        // Modifying the flow graph and the residual graph
+        /// Modifying the flow graph and the residual graph
         for (v=t; v != s; v=parent[v]) 
         { 
             u = parent[v]; 
@@ -93,8 +96,11 @@ int Graph::fordFulkerson(int type[])
             if(flag)
                 graph[v].push_back(make_pair(u,path_flow));
         } 
+        /// Increment the max flow by the bottleneck of the chosen augmenting path
         max_flow += path_flow; 
     }
+
+    ///For each task find the person it is assigned to in the Maximum Matching
     for(i=1;i<=n-2;i++)
         if(type[i]&&assignments[i].size())
             cout<<i<<"<-"<<assignments[i].back()<<"\n";
