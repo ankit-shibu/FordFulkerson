@@ -6,19 +6,13 @@ using namespace std::chrono;
 int main()
 {
 	#ifndef ONLINE_JUDGE
-	freopen("test/input/11.txt","r",stdin);
-	freopen("test/output/11.txt","w",stdout);
+	freopen("test/input/5d.txt","r",stdin);
+	freopen("test/output/5d.txt","w",stdout);
 	#endif
 
 	int n,m,i,j;
 	cin>>n>>m;
 	
-	if(n<=1)
-	{
-		cout<<0<<"\n";
-		cout<<"Set A: "<<1<<"\n";
-		return 0;
-	}
 	// Initialize Graph instance
     Graph g(n,m,n-1,n);
 
