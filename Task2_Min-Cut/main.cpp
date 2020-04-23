@@ -1,7 +1,11 @@
 #include <bits/stdc++.h>
 #include "graph.hpp"
 using namespace std;
- 
+
+/**
+* @brief Main function to execute the code
+* @return int 
+*/
 int main()
 {
 	int n,m,i,j;
@@ -12,14 +16,17 @@ int main()
 		cout<<"Set A: "<<1<<"\n";
 		return 0;
 	}
+	/// Initialize the Graph instance
     Graph g(n,m,1,n);
 
+	/// Take input
 	for(i=1;i<=m;i++)
 	{
 		int a,b,c;
 		cin>>a>>b>>c;
         g.addEdge(a,b,c);
 	}
-	// Call the fordFulkerson function to perform Ford Fulkersons
+
+	/// Use the created instance of Graph to call fordFulkerson function to print the min-cut.
     g.fordFulkerson(); 
 }

@@ -6,7 +6,7 @@ In this assignment, we have implemented the Ford-Fulkerson algorithm to find the
 	* 1 source (Vertex with no incoming edge) 
 	* 1 sink (Vertex with no outgoing edge)
 - Time Complexity of the algorithm is O(C*m) where C is the sum of capacities out of source and m is the number of edges.
- 
+- Flow condition -> a) Flow into a node = Flow out of a node b) Total flow on an edge <= Capacity of the edge
 
 ## TASK 1 + TASK 4 - Ford Fulkerson Algorithm
 ```
@@ -35,6 +35,13 @@ Dataset       |   Time(ms)  | Number of vertices(n) | Number of edges(m)|  Max F
 
 ```
 - Results in test folder. Check test/input for the input files and test/output for corresponding output file
+
+Dataset       | Number of vertices(n) | Number of edges(m)|  Min-Cut 
+--------------|-----------------------|-------------------|--------------------------------------------------------------
+ 1 ( 1.txt)   |   6                   |   10              |   23 Set A: 1 2 3 5 Set B: 4 6	       
+ 2 ( 2.txt)   |   2                   |   1               |   5 Set A: 1 Set B: 2         
+ 3 ( 3.txt)   |   6                   |   10              |   11 Set A: 1 3 Set B: 2 4 5 6        
+ 4 ( 4.txt)   |   7                   |   14              |   20 Set A: 1 3 Set B: 2 4 5 6 7             
 
 ## TASK 3 + TASK 4 - Bi-Partite matching
 ```

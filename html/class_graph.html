@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ford-Fulkerson_DAA_Assignment2: Graph Class Reference</title>
+<title>DAA Assignment 2: Graph Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ford-Fulkerson_DAA_Assignment2
+   <div id="projectname">DAA Assignment 2
    </div>
-   <div id="projectbrief">Using Ford_Fulkerson Algorithm to find the max flow and min cut</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +83,8 @@ $(document).ready(function(){initNavTree('class_graph.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_graph-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Graph Class Reference</div>  </div>
@@ -94,33 +95,85 @@ $(document).ready(function(){initNavTree('class_graph.html',''); initResizable()
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6afe1fd674622a0df5496a122d3f4ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ac6afe1fd674622a0df5496a122d3f4ad">Graph</a> (int n, int m, int s, int t)</td></tr>
+<tr class="memitem:ac6afe1fd674622a0df5496a122d3f4ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ac6afe1fd674622a0df5496a122d3f4ad">Graph</a> (int <a class="el" href="class_graph.html#a81a76a428e630453ef019a15b9092967">n</a>, int <a class="el" href="class_graph.html#a62588670cd666f806eddd37155bdfbf3">m</a>, int <a class="el" href="class_graph.html#a8fc3005d8f0a659a706ba620729cf27b">s</a>, int <a class="el" href="class_graph.html#a76df110212793f61ab2adb536c399a83">t</a>)</td></tr>
 <tr class="memdesc:ac6afe1fd674622a0df5496a122d3f4ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for initialising data structure.  <a href="class_graph.html#ac6afe1fd674622a0df5496a122d3f4ad">More...</a><br /></td></tr>
 <tr class="separator:ac6afe1fd674622a0df5496a122d3f4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cdfb932968807565b3cc3b52759e3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a8cdfb932968807565b3cc3b52759e3b8">addEdge</a> (int u, int v, int cap)</td></tr>
+<tr class="memitem:a8cdfb932968807565b3cc3b52759e3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a8cdfb932968807565b3cc3b52759e3b8">addEdge</a> (int <a class="el" href="class_graph.html#a290e45f26a477f88442b6624aefa4a61">u</a>, int <a class="el" href="class_graph.html#a23324531ae99747b494ef163d9339da7">v</a>, int <a class="el" href="class_graph.html#aa7ea16dbf76b9f52cba972b38799738a">cap</a>)</td></tr>
 <tr class="memdesc:a8cdfb932968807565b3cc3b52759e3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add directed edge from u -&gt; v.  <a href="class_graph.html#a8cdfb932968807565b3cc3b52759e3b8">More...</a><br /></td></tr>
 <tr class="separator:a8cdfb932968807565b3cc3b52759e3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf07ffa7541d6412a8606f59dacb8947"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#adf07ffa7541d6412a8606f59dacb8947">fordFulkerson</a> ()</td></tr>
 <tr class="memdesc:adf07ffa7541d6412a8606f59dacb8947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applying the FordFulkerson Alogorithm.  <a href="class_graph.html#adf07ffa7541d6412a8606f59dacb8947">More...</a><br /></td></tr>
 <tr class="separator:adf07ffa7541d6412a8606f59dacb8947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6afe1fd674622a0df5496a122d3f4ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ac6afe1fd674622a0df5496a122d3f4ad">Graph</a> (int n, int m, int s, int t)</td></tr>
+<tr class="memitem:ac6afe1fd674622a0df5496a122d3f4ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ac6afe1fd674622a0df5496a122d3f4ad">Graph</a> (int <a class="el" href="class_graph.html#a81a76a428e630453ef019a15b9092967">n</a>, int <a class="el" href="class_graph.html#a62588670cd666f806eddd37155bdfbf3">m</a>, int <a class="el" href="class_graph.html#a8fc3005d8f0a659a706ba620729cf27b">s</a>, int <a class="el" href="class_graph.html#a76df110212793f61ab2adb536c399a83">t</a>)</td></tr>
 <tr class="memdesc:ac6afe1fd674622a0df5496a122d3f4ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for initialising data structure.  <a href="class_graph.html#ac6afe1fd674622a0df5496a122d3f4ad">More...</a><br /></td></tr>
 <tr class="separator:ac6afe1fd674622a0df5496a122d3f4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cdfb932968807565b3cc3b52759e3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a8cdfb932968807565b3cc3b52759e3b8">addEdge</a> (int u, int v, int cap)</td></tr>
+<tr class="memitem:a8cdfb932968807565b3cc3b52759e3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a8cdfb932968807565b3cc3b52759e3b8">addEdge</a> (int <a class="el" href="class_graph.html#a290e45f26a477f88442b6624aefa4a61">u</a>, int <a class="el" href="class_graph.html#a23324531ae99747b494ef163d9339da7">v</a>, int <a class="el" href="class_graph.html#aa7ea16dbf76b9f52cba972b38799738a">cap</a>)</td></tr>
 <tr class="memdesc:a8cdfb932968807565b3cc3b52759e3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add directed edge from u -&gt; v.  <a href="class_graph.html#a8cdfb932968807565b3cc3b52759e3b8">More...</a><br /></td></tr>
 <tr class="separator:a8cdfb932968807565b3cc3b52759e3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf07ffa7541d6412a8606f59dacb8947"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#adf07ffa7541d6412a8606f59dacb8947">fordFulkerson</a> ()</td></tr>
 <tr class="memdesc:adf07ffa7541d6412a8606f59dacb8947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applying the FordFulkerson Alogorithm. Calls the mincut.  <a href="class_graph.html#adf07ffa7541d6412a8606f59dacb8947">More...</a><br /></td></tr>
 <tr class="separator:adf07ffa7541d6412a8606f59dacb8947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6afe1fd674622a0df5496a122d3f4ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ac6afe1fd674622a0df5496a122d3f4ad">Graph</a> (int n, int m, int s, int t)</td></tr>
+<tr class="memitem:ac6afe1fd674622a0df5496a122d3f4ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ac6afe1fd674622a0df5496a122d3f4ad">Graph</a> (int <a class="el" href="class_graph.html#a81a76a428e630453ef019a15b9092967">n</a>, int <a class="el" href="class_graph.html#a62588670cd666f806eddd37155bdfbf3">m</a>, int <a class="el" href="class_graph.html#a8fc3005d8f0a659a706ba620729cf27b">s</a>, int <a class="el" href="class_graph.html#a76df110212793f61ab2adb536c399a83">t</a>)</td></tr>
 <tr class="memdesc:ac6afe1fd674622a0df5496a122d3f4ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for initialising data structure.  <a href="class_graph.html#ac6afe1fd674622a0df5496a122d3f4ad">More...</a><br /></td></tr>
 <tr class="separator:ac6afe1fd674622a0df5496a122d3f4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cdfb932968807565b3cc3b52759e3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a8cdfb932968807565b3cc3b52759e3b8">addEdge</a> (int u, int v, int cap)</td></tr>
+<tr class="memitem:a8cdfb932968807565b3cc3b52759e3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a8cdfb932968807565b3cc3b52759e3b8">addEdge</a> (int <a class="el" href="class_graph.html#a290e45f26a477f88442b6624aefa4a61">u</a>, int <a class="el" href="class_graph.html#a23324531ae99747b494ef163d9339da7">v</a>, int <a class="el" href="class_graph.html#aa7ea16dbf76b9f52cba972b38799738a">cap</a>)</td></tr>
 <tr class="memdesc:a8cdfb932968807565b3cc3b52759e3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add directed edge from u -&gt; v.  <a href="class_graph.html#a8cdfb932968807565b3cc3b52759e3b8">More...</a><br /></td></tr>
 <tr class="separator:a8cdfb932968807565b3cc3b52759e3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a138c00d593d0bb9f65c82836158a1ac4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a138c00d593d0bb9f65c82836158a1ac4">fordFulkerson</a> (int type[])</td></tr>
 <tr class="memdesc:a138c00d593d0bb9f65c82836158a1ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applying the FordFulkerson Alogorithm. Calls the mincut.  <a href="class_graph.html#a138c00d593d0bb9f65c82836158a1ac4">More...</a><br /></td></tr>
 <tr class="separator:a138c00d593d0bb9f65c82836158a1ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4aa52fe1468d6db862aa74ff007aac80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a4aa52fe1468d6db862aa74ff007aac80">findPath</a> (void)</td></tr>
+<tr class="memdesc:a4aa52fe1468d6db862aa74ff007aac80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a Augmenting Path.  <a href="class_graph.html#a4aa52fe1468d6db862aa74ff007aac80">More...</a><br /></td></tr>
+<tr class="separator:a4aa52fe1468d6db862aa74ff007aac80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa52fe1468d6db862aa74ff007aac80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a4aa52fe1468d6db862aa74ff007aac80">findPath</a> (void)</td></tr>
+<tr class="memdesc:a4aa52fe1468d6db862aa74ff007aac80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform BFS to find a augmenting path.  <a href="class_graph.html#a4aa52fe1468d6db862aa74ff007aac80">More...</a><br /></td></tr>
+<tr class="separator:a4aa52fe1468d6db862aa74ff007aac80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae285955f58e7983fbec85a3e16479e7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ae285955f58e7983fbec85a3e16479e7f">mincut</a> (void)</td></tr>
+<tr class="memdesc:ae285955f58e7983fbec85a3e16479e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the min-cut. The sets of vertices.  <a href="class_graph.html#ae285955f58e7983fbec85a3e16479e7f">More...</a><br /></td></tr>
+<tr class="separator:ae285955f58e7983fbec85a3e16479e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa52fe1468d6db862aa74ff007aac80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a4aa52fe1468d6db862aa74ff007aac80">findPath</a> (void)</td></tr>
+<tr class="memdesc:a4aa52fe1468d6db862aa74ff007aac80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform BFS to find a augmenting path.  <a href="class_graph.html#a4aa52fe1468d6db862aa74ff007aac80">More...</a><br /></td></tr>
+<tr class="separator:a4aa52fe1468d6db862aa74ff007aac80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a81a76a428e630453ef019a15b9092967"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a81a76a428e630453ef019a15b9092967">n</a></td></tr>
+<tr class="memdesc:a81a76a428e630453ef019a15b9092967"><td class="mdescLeft">&#160;</td><td class="mdescRight">n: Number of vertices  <a href="class_graph.html#a81a76a428e630453ef019a15b9092967">More...</a><br /></td></tr>
+<tr class="separator:a81a76a428e630453ef019a15b9092967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62588670cd666f806eddd37155bdfbf3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a62588670cd666f806eddd37155bdfbf3">m</a></td></tr>
+<tr class="memdesc:a62588670cd666f806eddd37155bdfbf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">m: Number of edges  <a href="class_graph.html#a62588670cd666f806eddd37155bdfbf3">More...</a><br /></td></tr>
+<tr class="separator:a62588670cd666f806eddd37155bdfbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc3005d8f0a659a706ba620729cf27b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a8fc3005d8f0a659a706ba620729cf27b">s</a></td></tr>
+<tr class="memdesc:a8fc3005d8f0a659a706ba620729cf27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">s: Source vertex  <a href="class_graph.html#a8fc3005d8f0a659a706ba620729cf27b">More...</a><br /></td></tr>
+<tr class="separator:a8fc3005d8f0a659a706ba620729cf27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76df110212793f61ab2adb536c399a83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a76df110212793f61ab2adb536c399a83">t</a></td></tr>
+<tr class="memdesc:a76df110212793f61ab2adb536c399a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">t: Sink vertex  <a href="class_graph.html#a76df110212793f61ab2adb536c399a83">More...</a><br /></td></tr>
+<tr class="separator:a76df110212793f61ab2adb536c399a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf6596df6c808fd1b5c5da76daa4752"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#aedf6596df6c808fd1b5c5da76daa4752">i</a></td></tr>
+<tr class="separator:aedf6596df6c808fd1b5c5da76daa4752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52d82b17acd9b029d0138b9cbf05347"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ac52d82b17acd9b029d0138b9cbf05347">j</a></td></tr>
+<tr class="separator:ac52d82b17acd9b029d0138b9cbf05347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290e45f26a477f88442b6624aefa4a61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a290e45f26a477f88442b6624aefa4a61">u</a></td></tr>
+<tr class="separator:a290e45f26a477f88442b6624aefa4a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23324531ae99747b494ef163d9339da7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a23324531ae99747b494ef163d9339da7">v</a></td></tr>
+<tr class="separator:a23324531ae99747b494ef163d9339da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ea16dbf76b9f52cba972b38799738a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#aa7ea16dbf76b9f52cba972b38799738a">cap</a></td></tr>
+<tr class="separator:aa7ea16dbf76b9f52cba972b38799738a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b753a247599d0c04a5d6f75ce85fe4"><td class="memItemLeft" align="right" valign="top">vector&lt; pair&lt; int, int &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ae9b753a247599d0c04a5d6f75ce85fe4">graph</a></td></tr>
+<tr class="memdesc:ae9b753a247599d0c04a5d6f75ce85fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">graph: graph (Adjacency List), gmat: graph (Matrix Representation)  <a href="class_graph.html#ae9b753a247599d0c04a5d6f75ce85fe4">More...</a><br /></td></tr>
+<tr class="separator:ae9b753a247599d0c04a5d6f75ce85fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95450e1dedd798d0bdbb4012d938227"><td class="memItemLeft" align="right" valign="top">vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#aa95450e1dedd798d0bdbb4012d938227">visited</a></td></tr>
+<tr class="memdesc:aa95450e1dedd798d0bdbb4012d938227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visited array for dfs.  <a href="class_graph.html#aa95450e1dedd798d0bdbb4012d938227">More...</a><br /></td></tr>
+<tr class="separator:aa95450e1dedd798d0bdbb4012d938227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a39cb910887ef96a86494d0bf3b75d"><td class="memItemLeft" align="right" valign="top">queue&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ae8a39cb910887ef96a86494d0bf3b75d">q</a></td></tr>
+<tr class="memdesc:ae8a39cb910887ef96a86494d0bf3b75d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue to be used for BFS.  <a href="class_graph.html#ae8a39cb910887ef96a86494d0bf3b75d">More...</a><br /></td></tr>
+<tr class="separator:ae8a39cb910887ef96a86494d0bf3b75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc15be4c2a7a57d8f60fa7028b097c9"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a6fc15be4c2a7a57d8f60fa7028b097c9">parent</a></td></tr>
+<tr class="memdesc:a6fc15be4c2a7a57d8f60fa7028b097c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent of each node after every BFS.  <a href="class_graph.html#a6fc15be4c2a7a57d8f60fa7028b097c9">More...</a><br /></td></tr>
+<tr class="separator:a6fc15be4c2a7a57d8f60fa7028b097c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac6afe1fd674622a0df5496a122d3f4ad"></a>
@@ -409,6 +462,95 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4aa52fe1468d6db862aa74ff007aac80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa52fe1468d6db862aa74ff007aac80">&#9670;&nbsp;</a></span>findPath() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Graph::findPath </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find a Augmenting Path. </p>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="a4aa52fe1468d6db862aa74ff007aac80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa52fe1468d6db862aa74ff007aac80">&#9670;&nbsp;</a></span>findPath() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Graph::findPath </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform BFS to find a augmenting path. </p>
+<dl class="section return"><dt>Returns</dt><dd>bool <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a4aa52fe1468d6db862aa74ff007aac80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa52fe1468d6db862aa74ff007aac80">&#9670;&nbsp;</a></span>findPath() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Graph::findPath </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform BFS to find a augmenting path. </p>
+<dl class="section return"><dt>Returns</dt><dd>bool <br  />
+ </dd></dl>
+
+</div>
+</div>
 <a id="adf07ffa7541d6412a8606f59dacb8947"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf07ffa7541d6412a8606f59dacb8947">&#9670;&nbsp;</a></span>fordFulkerson() <span class="overload">[1/3]</span></h2>
 
@@ -464,6 +606,337 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Applying the FordFulkerson Alogorithm. Calls the mincut. </p>
+
+</div>
+</div>
+<a id="ae285955f58e7983fbec85a3e16479e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae285955f58e7983fbec85a3e16479e7f">&#9670;&nbsp;</a></span>mincut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Graph::mincut </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find the min-cut. The sets of vertices. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa7ea16dbf76b9f52cba972b38799738a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ea16dbf76b9f52cba972b38799738a">&#9670;&nbsp;</a></span>cap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::cap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9b753a247599d0c04a5d6f75ce85fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b753a247599d0c04a5d6f75ce85fe4">&#9670;&nbsp;</a></span>graph</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; pair&lt; int, int &gt; &gt; * Graph::graph</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>graph: graph (Adjacency List), gmat: graph (Matrix Representation) </p>
+
+</div>
+</div>
+<a id="aedf6596df6c808fd1b5c5da76daa4752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf6596df6c808fd1b5c5da76daa4752">&#9670;&nbsp;</a></span>i</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::i</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac52d82b17acd9b029d0138b9cbf05347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52d82b17acd9b029d0138b9cbf05347">&#9670;&nbsp;</a></span>j</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::j</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62588670cd666f806eddd37155bdfbf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62588670cd666f806eddd37155bdfbf3">&#9670;&nbsp;</a></span>m</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::m</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>m: Number of edges </p>
+
+</div>
+</div>
+<a id="a81a76a428e630453ef019a15b9092967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a76a428e630453ef019a15b9092967">&#9670;&nbsp;</a></span>n</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::n</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>n: Number of vertices </p>
+
+</div>
+</div>
+<a id="a6fc15be4c2a7a57d8f60fa7028b097c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc15be4c2a7a57d8f60fa7028b097c9">&#9670;&nbsp;</a></span>parent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; int &gt; Graph::parent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parent of each node after every BFS. </p>
+
+</div>
+</div>
+<a id="ae8a39cb910887ef96a86494d0bf3b75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8a39cb910887ef96a86494d0bf3b75d">&#9670;&nbsp;</a></span>q</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">queue&lt; int &gt; Graph::q</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queue to be used for BFS. </p>
+
+</div>
+</div>
+<a id="a8fc3005d8f0a659a706ba620729cf27b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc3005d8f0a659a706ba620729cf27b">&#9670;&nbsp;</a></span>s</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::s</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>s: Source vertex </p>
+
+</div>
+</div>
+<a id="a76df110212793f61ab2adb536c399a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76df110212793f61ab2adb536c399a83">&#9670;&nbsp;</a></span>t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>t: Sink vertex </p>
+
+</div>
+</div>
+<a id="a290e45f26a477f88442b6624aefa4a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290e45f26a477f88442b6624aefa4a61">&#9670;&nbsp;</a></span>u</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::u</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23324531ae99747b494ef163d9339da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23324531ae99747b494ef163d9339da7">&#9670;&nbsp;</a></span>v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::v</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa95450e1dedd798d0bdbb4012d938227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95450e1dedd798d0bdbb4012d938227">&#9670;&nbsp;</a></span>visited</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; bool &gt; Graph::visited</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Visited array for dfs. </p>
 
 </div>
 </div>

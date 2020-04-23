@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Ford-Fulkerson_DAA_Assignment2", "index.html", [
+  [ "DAA Assignment 2", "index.html", [
     [ "Ford-Fulkerson Algorithm", "md__r_e_a_d_m_e.html", [
       [ "General Discussion", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
       [ "TASK 1 + TASK 4 - Ford Fulkerson Algorithm", "md__r_e_a_d_m_e.html#autotoc_md2", [
@@ -43,7 +43,8 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
