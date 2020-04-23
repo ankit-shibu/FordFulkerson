@@ -9,8 +9,8 @@ using namespace std::chrono;
 int main()
 {
 	#ifndef ONLINE_JUDGE
-	freopen("test/input/5d.txt","r",stdin);
-	freopen("test/output/5d.txt","w",stdout);
+	freopen("test/input/6b.txt","r",stdin);
+	freopen("test/output/6b.txt","w",stdout);
 	#endif
 
 	int n,m,i,j;

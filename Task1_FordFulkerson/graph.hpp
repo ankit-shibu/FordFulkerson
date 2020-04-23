@@ -44,18 +44,28 @@ public:
      * @param t sink
      */
     Graph(int n, int m,int s, int t);
-
+    
+    /**
+     * @brief Finding the source vertex 
+     */
+	void findSource();
+	
+    /**
+     * @brief Finding the Sink vertex 
+     */	
+	void findSink();
     /**
      * @brief Add directed edge from u -> v
      * @param cap capacity of edge
      * @param u From vertex
      * @param v To vertex
      */
+     
     void addEdge(int u, int v, int cap);
 	
     /**
      * @brief Applying the FordFulkerson Alogorithm.
-     * 
+     * @return int
      * 
      *  
      */
